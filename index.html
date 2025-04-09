@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Layer hitam + tombol -->
+<div id="overlay">
+  <style>
+    #overlay button {
+      font-size: 48px;
+      color: red;
+      background: none;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #overlay button::before {
+      content: "♥️";
+      font-size: 64px;
+      animation: pulse-glow 1s infinite;
+      color: red;
+      text-shadow: 0 0 10px yellow;
+    }
+
+    #overlay button h3 {
+      margin: 0;
+      font-size: 18px;
+      color: white;
+    }
+
+    @keyframes pulse-glow {
+      0% {
+        text-shadow: 0 0 5px yellow;
+      }
+      50% {
+        text-shadow: 0 0 20px yellow;
+      }
+      100% {
+        text-shadow: 0 0 5px yellow;
+      }
+    }
+    .logo-ig {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: red;
+      color: white;
+      font-size: 24px;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s ease;
+    }
+
+    .logo-ig:hover {
+      transform: scale(1.1);
+    }
+    
+  </style>
+
+  <button onclick="mulai()"><h3>ramon</h3></button>
+</div>
+
+  <a href="https://www.instagram.com/bakal.calon.bupati?igsh=MW9jM3h1MXpqdzh6OA==" 
+     class="logo-ig" target="_blank" title="Kunjungi Instagram">
+    🪪
+  </a>
+
+<!-- Audio -->
+<audio id="musik" loop>l
+  <source src="cantik.mp3" type="audio/mpeg">
+</audio>
+
+    <div class="container">
+        <div class="front">
+  <div class="front-left"></div>
+  <div class="front-right"></div>
+
+  <img src="ziiiii1.jpg" class="love left">
+  <img src="ziiiii.jpg" class="love center">
+  <img src="ziiiii2.jpg" class="love right">
+</div>
+        
+        <!-- Lirik - semua disembunyikan awalnya -->
+<div id="lirik-container" style="color: black; font-size: 20px; margin-top: 30px;">
+  <div class="lirik" data-waktu="0">.......I LOVEEE YOUUUUU.....</div>
+  <div class="lirik" data-waktu="2">Bukan karena make up di wajahmu</div>
+  <div class="lirik" data-waktu="6">Atau lipstik merah itu ( di bibir mu)</div>
+  <div class="lirik" data-waktu="11">Lembut hati tutur kata</div>
+  <div class="lirik" data-waktu="14">Terciptalah cinta yang ku puja...........</div>
+  <div class="lirik" data-waktu="19">Tak perduuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu...li</div>
+    <div class="lirik" data-waktu="24">langit menertawakanku</div>
+  <div class="lirik" data-waktu="28">Kau mencuuuuuuuuuuuuuuuuuuuuuuu..ri</div>
+  <div class="lirik" data-waktu="33">hatiku mimpiku semua rinduku.....</div>
+  <div class="lirik" data-waktu="37">Karena kamu cantik</div>
+  <div class="lirik" data-waktu="41">Kan ku beri segalanya apa yang ku punya.........</div>
+  <div class="lirik" data-waktu="46">Dan hatimu baik...</div>
+  <div class="lirik" data-waktu="49">Sempurnalah duniaku saat kau di sisiku...</div>
+    <div class="lirik" data-waktu="55">.......LOVE YOUUUUUUUUUUUUUUUUUU.....</div>
+</div>
+
+        <div class="back">
+            <div class="back-left"></div>
+            <div class="back-right"></div>
+        </div>
+
+        <div class="left"></div>
+        <div class="right"></div>
+
+        <div class="left-piece"></div>
+        <div class="left-piece2"></div>
+        <div class="left-piece3"></div>
+        <div class="left-piece4"></div>
+        <div class="left-piece5"></div>
+        <div class="left-piece6"></div>
+        <div class="left-piece7"></div>
+        <div class="left-piece8"></div>
+        <div class="left-piece9"></div>
+        <div class="left-piece10"></div>
+        <div class="left-piece11"></div>
+        <div class="left-piece12"></div>
+        <div class="left-piece13"></div>
+        <div class="left-piece14"></div>
+        <div class="left-piece15"></div>
+        <div class="left-piece16"></div>
+        <div class="left-piece17"></div>
+        <div class="left-piece18"></div>
+        <div class="left-piece19"></div>
+        <div class="left-piece20"></div>
+        <div class="left-piece21"></div>
+        <div class="left-piece22"></div>
+        <div class="left-piece23"></div>
+        <div class="right-piece"></div>
+        <div class="right-piece2"></div>
+        <div class="right-piece3"></div>
+        <div class="right-piece4"></div>
+        <div class="right-piece5"></div>
+        <div class="right-piece6"></div>
+        <div class="right-piece7"></div>
+        <div class="right-piece8"></div>
+        <div class="right-piece9"></div>
+        <div class="right-piece10"></div>
+        <div class="right-piece11"></div>
+        <div class="right-piece12"></div>
+        <div class="right-piece13"></div>
+        <div class="right-piece14"></div>
+        <div class="right-piece15"></div>
+        <div class="right-piece16"></div>
+        <div class="right-piece17"></div>
+        <div class="right-piece18"></div>
+        <div class="right-piece19"></div>
+        <div class="right-piece20"></div>
+        <div class="right-piece21"></div>
+        <div class="right-piece22"></div>
+        <div class="right-piece23"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
